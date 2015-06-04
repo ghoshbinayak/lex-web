@@ -1,0 +1,13 @@
+POST http://localhost:5000/un
+Content-Type: text/xml
+
+<?xml version="1.0" encoding="UTF8"?>
+<soap:Envelope soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+ xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance"
+ xmlns:tns="http://ws.lexmark.com/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<tns:getTimeAsString xsi:nil="true" />
+	</soap:Body>
+</soap:Envelope>
